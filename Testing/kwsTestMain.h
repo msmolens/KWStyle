@@ -109,7 +109,7 @@ int Compare(const char* baseline, const char* testfile)
   // Go through the testfile and check if we have the same errors than the
   // baseline
   long int posError = static_cast<long int>(testfileBuffer.find("<Error>"));
-  long int posErrorBase = static_cast<long int>(testfileBuffer.find("<Error>"));
+  long int posErrorBase = static_cast<long int>(baselineBuffer.find("<Error>"));
 
   while(posError != -1)
     {
