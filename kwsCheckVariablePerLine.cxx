@@ -32,7 +32,7 @@ bool Parser::CheckVariablePerLine(unsigned long max)
    "char","unsigned char",
    "short","unsigned short",
    "long","unsigned long",
-   "float","double","void","long int"};
+   "float","double","void","size_t"};
 
   bool hasError = false;
   for(unsigned int i = 0;i<ntypes;i++)
